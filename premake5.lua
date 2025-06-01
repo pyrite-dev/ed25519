@@ -1,0 +1,6 @@
+project("ED25519")
+	kind("StaticLib")
+	targetdir("lib/%{cfg.buildcfg}/%{cfg.platform}")
+	targetname("ed25519")
+	files("src/*.c")
+	includedirs("include")
